@@ -17,10 +17,9 @@ segunda_linea = mi_archivo.readline()
 tercera_linea = mi_archivo.readline()
 
 
-
-
-
-
+#>> MÉTODO  readlines():
+'''Devuelve una lista donde sus elementos son cada linea del archivo'''
+todas = mi_archivo.readlines()
 
 
 mi_archivo.close()
