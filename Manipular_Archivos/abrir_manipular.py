@@ -6,6 +6,16 @@ mi_archivo = open(r'C:\Users\marco\Documents\GitHub-Repos\Python_Projects\Manipu
 '''Leer y devolver el contenido completo o parcial del archivo'''
 mi_archivo.read()
 
+# Abrir el archivo en modo escritura para cambiar su contenido
+with open('mi_archivo.txt', 'w') as archivo:
+    archivo.write('Nuevo texto')
+archivo.close()
+
+# Abrir el archivo en modo lectura para imprimir su contenido
+with open('mi_archivo.txt', 'r') as archivo:
+    contenido = archivo.read()
+    print(contenido)
+
 
 #>> MÉTODO  readline()
 '''Lee una linea del archivo en cada llamada, al invocarla varias veces lee la siguiente linea del archivo
